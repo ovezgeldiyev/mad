@@ -1,0 +1,157 @@
+h1 {
+  font-size: 80px;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 80px;
+  line-height: 112px;
+  text-transform: uppercase;
+  &.sm {
+    font-size: 77px;
+    line-height: 100%;
+    text-transform: unset;
+  }
+  &.big {
+    font-size: 158px;
+    line-height: 100%;
+  }
+}
+
+h3 {
+  font-size: 31px;
+  line-height: 44px;
+  &.sm {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}
+
+h4 {
+  font-size: 23px;
+  line-height: 33px;
+  &.sm {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+h5 {
+  font-size: 43px;
+  line-height: 60px;
+}
+
+h6 {
+  font-size: 11px;
+  line-height: 15px;
+  &.big {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+p {
+  &.big {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &.sm {
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+main {
+  overflow: hidden;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 44px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $white;
+  background-color: $main;
+  transition: .3s ease;
+  cursor: pointer;
+  border-radius: 22px;
+}
+
+.sectionLine  {
+  width: 100%;
+  max-width: 1380px;
+  margin: 77px auto;
+  border-radius: 5px;
+  height: 10px;
+  background-color: $white;
+  position: relative;
+  &.left {
+    .sectionLine {
+      &__logo {
+        right: unset;
+        left: 6%;
+      }
+    }
+  }
+  &.sm {
+    margin-top: 0;
+  }
+  &.big {
+    margin-top: 160px;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+    width: 6%;
+    padding: 0 7px;
+    background-color: $main;
+    min-width: 60px;
+    img {
+      width: 100%;
+
+    }
+  }
+}
+
+.blue {
+  background: $blueGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  &Bg {
+    background: $blueGradient;
+  }
+}
+.orange {
+  background: $orangeGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  &Bg {
+    background: $orangeGradient;
+  }
+}
+.rose {
+  background: $roseGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  &Bg {
+    background: $roseGradient;
+  }
+}
+
+.input {
+  &__outer {
+    button {
+      
+    }
+  }
+}

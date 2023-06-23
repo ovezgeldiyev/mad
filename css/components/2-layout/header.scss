@@ -1,0 +1,143 @@
+.header {
+  background-color: $main;
+  &__inner {
+    padding: 60px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    &.sm {
+      padding-bottom: 30px;
+    }
+    &-logo {
+      position: absolute;
+      top: 50px;
+      left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 125px;
+      z-index: 10;
+      img {
+        width: 100%;
+      }
+    }
+    &-links {
+      width: calc(100% - 150px);
+      max-width: 1080px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        text-transform: uppercase;
+        margin-right: 15px;
+        font-size: 15px;
+        line-height: 22px;
+        padding: 5px 0;
+        &:hover {
+          opacity: 1;
+          color: $blue;
+        }
+        &:last-child {
+          margin: 0;
+        }
+        &:nth-child(2), &:nth-child(5) {
+          &:hover {
+            color: $orange;
+          }
+        }
+        &:nth-child(3), &:nth-child(6) {
+          &:hover {
+            color: $rose;
+          }
+        }
+      }
+    }
+  }
+}
+// 1380px
+@mixin header-xxxlg-xxxxlg  {
+  .header {
+    &__inner {
+      padding: 40px 0;
+      &.sm {
+        padding-bottom: 20px;
+      }
+      &-logo {
+        top: 30px;
+        width: 105px;
+      }
+      &-links {
+        a {
+          font-size: 13px;
+          line-height: 100%;
+        }
+      }
+    }
+  }
+}
+// 1180px
+@mixin header-xlg-xxlg {
+  .header {
+    &__inner {
+      padding: 28px 0;
+      &-logo {
+        top: 20px;
+        left: 30px;
+        width: 80px;
+      }
+      &-links {
+        width: calc(100% - 130px);
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+    .header {
+      &__inner {
+        padding: 24px 0;
+        &.sm {
+          padding: 24px 0;
+        }
+        &-logo {
+          width: 70px;
+        }
+        &-links {
+          display: none;
+        }
+      }
+    }
+}
+// 750px
+@mixin header-sm-md {
+  .header {
+    &__inner {
+      &-logo {
+        width: 60px;
+        left: 20px;
+      }
+    }
+  }
+}
+// 540px
+@mixin header-xsm-sm {
+    .header {
+      &__inner {
+        &-logo {
+          width: 50px;
+        }
+      }
+    }
+}
+@keyframes sticky {
+    0% {
+      top: -60px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }

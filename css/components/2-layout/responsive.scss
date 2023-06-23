@@ -1,0 +1,315 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  h2 {
+    font-size: 70px;
+    line-height: 90px;
+    &.sm {
+      font-size: 70px;
+    }
+    &.big {
+      font-size: 140px;
+    }
+  }
+  @include hero-xxxlg-xxxxlg;
+  @include header-xxxlg-xxxxlg;
+  @include ticketing-xxxlg-xxxxlg;
+  @include agenda-xxxlg-xxxxlg;
+
+}
+// 1250px
+@include xlg-xxlg-extra {
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  h2 {
+    font-size: 60px;
+    line-height: 70px;
+    &.sm {
+      font-size: 60px;
+    }
+    &.big {
+      font-size: 120px;
+    }
+  }
+  @include hero-xlg-xxlg-extra;
+  @include news-xlg-xxlg-extra;
+  @include footer-xlg-xxlg-extra;
+
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 50px;
+    line-height: 60px;
+    &.sm {
+      font-size: 50px;
+    }
+    &.big {
+      font-size: 100px;
+    }
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 40px;
+    &.sm {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  h5 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  @include hero-xlg-xxlg;
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include agenda-xlg-xxlg;
+  @include news-xlg-xxlg;
+  @include activity-xlg-xxlg;
+  @include collection-xlg-xxlg;
+  @include ticketing-xlg-xxlg;
+  @include footer-xlg-xxlg;
+
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+    &.sm {
+      font-size: 40px;
+    }
+    &.big {
+      font-size: 80px;
+    }
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 35px;
+    &.sm {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  h5 {
+    font-size: 33px;
+    line-height: 44px;
+  }
+  .sectionLine {
+    margin: 60px 0;
+    height: 7px;
+    &.big {
+      margin-top: 100px;
+    }
+  }
+  .button {
+    padding: 14px 36px;
+  }
+  @include hero-lg-xlg;
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include agenda-lg-xlg;
+  @include activity-lg-xlg;
+  @include ticketing-lg-xlg;
+  @include footer-lg-xlg;
+
+}
+// 930px
+@include md-lg {
+
+  h3 {
+    font-size: 22px;
+    line-height: 30px;
+    &.sm {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+    &.sm {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  h5 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .sectionLine {
+    &.big {
+      margin-top: 80px;
+    }
+  }
+  @include hero-md-lg;
+  @include agenda-md-lg;
+  @include news-md-lg;
+  @include ticketing-md-lg;
+  @include footer-md-lg;
+
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .sectionLine {
+    margin: 40px 0;
+  }
+  @include hero-sm-md;
+  @include header-sm-md;
+  @include agenda-sm-md;
+  @include activity-sm-md;
+  @include collection-sm-md;
+  @include news-sm-md;
+  @include footer-sm-md;
+
+}
+// 650px
+@include sm-md-extra {
+  h3 {
+    font-size: 20px;
+    line-height: 26px;
+    &.sm {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  h4 {
+    font-size: 17px;
+    line-height: 26px;
+    &.sm {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  h5 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .button {
+    font-size: 11px;
+    padding: 10px 30px;
+  }
+  @include hero-sm-md-extra;
+  @include news-sm-md-extra;
+  @include agenda-sm-md-extra;
+  @include ticketing-sm-md-extra;
+  @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 23px;
+    &.sm {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+  h4 {
+    font-size: 15px;
+    line-height: 22px;
+    &.sm {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+  h5 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .sectionLine {
+    margin: 30px 0;
+    height: 5px;
+    &.big {
+      margin-top: 50px;
+    }
+    &__logo {
+      min-width: 40px;
+      padding: 0 4px;
+    }
+  }
+  @include header-xsm-sm;
+  @include hero-xsm-sm;
+  @include news-xsm-sm;
+  @include agenda-xsm-sm;
+  @include collection-xsm-sm;
+  @include ticketing-xsm-sm;
+  @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+    &.sm {
+      font-size: 38px;
+    }
+    &.big {
+      font-size: 75px;
+    }
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .button {
+    font-size: 10px;
+    padding: 8px 20px;
+  }
+  @include hero-xxsm-xsm;
+  @include agenda-xxsm-xsm;
+  @include news-xxsm-xsm;
+  @include activity-xxsm-xsm;
+  @include ticketing-xxsm-xsm;
+
+}
+// 375px
+@include xxxsm-xxsm {
+  @include agenda-xxxsm-xxsm;
+}
